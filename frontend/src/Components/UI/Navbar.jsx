@@ -1,8 +1,29 @@
 const Navbar = () => {
   return (
-    <div className="p-8 h-24 bg-cyan-500 flex items-center justify-between">
-      <h1>E challan</h1>
-      <h1>This is Navbar</h1>
+    <div className="navbar bg-base-100">
+      <div className="flex-1">
+        <a className="btn btn-ghost text-xl">E Challan</a>
+      </div>
+      <div className="flex-none">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>Upload</a>
+          </li>
+          <li>
+            <details>
+              <summary>Models</summary>
+              <ul className="bg-base-100 rounded-t-none p-2">
+                <li>
+                  <a className="text-nowrap">Model 1</a>
+                </li>
+                <li>
+                  <a className="text-nowrap">Model 2</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

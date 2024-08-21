@@ -1,26 +1,39 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">E Challan</a>
+        <Link to="/" className="btn btn-ghost text-xl">
+          E Challan
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Upload</a>
-          </li>
-          <li>
+          <li className="btn btn-ghost">
             <details>
               <summary>Models</summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 <li>
-                  <a className="text-nowrap">Model 1</a>
+                  <Link to="/model1">Model 1</Link>
                 </li>
                 <li>
-                  <a className="text-nowrap">Model 2</a>
+                  <Link to="/model2">Model 2</Link>
+                </li>
+                <li>
+                  <Link to="/model3">Model 3</Link>
+                </li>
+                <li>
+                  <Link to="/model4">Model 4</Link>
+                </li>
+                <li>
+                  <Link to="/model5">Model 5</Link>
                 </li>
               </ul>
             </details>
+          </li>
+          <li className="btn btn-accent ml-3">
+            <Link to="/challan">Check Challan</Link>
           </li>
         </ul>
       </div>

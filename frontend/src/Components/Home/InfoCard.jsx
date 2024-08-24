@@ -1,33 +1,63 @@
 const InfoCard = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       <h2 className="text-3xl mb-2">A brief Intro about our Project</h2>
+      <p className="">
+        The Traffic Rule Violation System is an advanced computer vision-based
+        solution designed to enhance road safety by automatically detecting and
+        reporting various types of traffic violations. This comprehensive system
+        integrates multiple modules, each focused on a specific type of
+        violation, including lane line violations, speed violations, parking
+        violations, traffic signal violations, and helmet violations. By
+        leveraging state-of-the-art deep learning and image processing
+        techniques, the system aims to promote safer driving behaviors and
+        assist law enforcement in maintaining traffic order effectively.
+      </p>
+      <h3 className="text-2xl">
+        Features of the Traffic Rule Violation System
+      </h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ut at
-        quos quam sunt eum, soluta eius assumenda sapiente necessitatibus et
-        earum omnis debitis odit vitae reprehenderit optio dolore vero. Facilis
-        ducimus eveniet, nesciunt quae error ex? Eum earum eligendi perferendis
-        quia deleniti, consequuntur aperiam. Vitae, eveniet eum exercitationem
-        temporibus animi dolores veniam enim officia id repellat, blanditiis
-        fugiat ullam. Libero, dolor impedit! Porro iusto earum ullam fugiat quas
-        aliquam, inventore, adipisci delectus possimus aspernatur quidem. Fugit,
-        fuga sunt quaerat libero asperiores officiis soluta numquam tempora eos
-        voluptatum assumenda reiciendis! Tenetur eos impedit dolor fuga quod
-        distinctio veniam porro temporibus, iste ex ut nemo vel in! Excepturi,
-        hic nemo. Modi adipisci harum repellat eveniet temporibus eius eum odit
-        vero magnam! Distinctio voluptates ea pariatur sed, ratione harum. Sequi
-        deleniti, laborum placeat, odit fugit inventore magnam perferendis
-        aperiam perspiciatis amet debitis iste illo repellendus unde ipsam quo
-        distinctio quod asperiores alias. Amet doloremque quia natus. Natus
-        nihil voluptatibus maxime velit, veritatis adipisci doloribus vitae quam
-        laborum aut officia aperiam, laboriosam repudiandae ut ipsum mollitia
-        neque dolor! Cum provident dolore voluptatem reiciendis. Eos enim
-        nesciunt cum voluptate culpa ratione quas ut recusandae labore eius
-        ipsum, quos at nihil magnam corporis totam molestias quis. Iusto amet
-        dolore voluptatem dolores quos ea! Quaerat, animi. Molestiae quod
-        eligendi eum nihil minus soluta tenetur impedit cumque, ipsa consectetur
-        cum quam delectus, ullam ex sapiente veniam doloribus illo itaque quas?
-        Sapiente ipsum maxime excepturi provident quae similique!
+        <span className="font-bold">Lane Line Violation Detection:</span> This
+        module identifies vehicles that stray out of their designated lanes
+        without proper signaling or in areas where lane changes are prohibited.
+        It helps in reducing accidents caused by careless or reckless lane
+        changes.
+      </p>
+      <p>
+        <span className="font-bold">Speed Violation Detection:</span> By
+        analyzing the movement of vehicles over time, this module accurately
+        measures their speed and detects those exceeding the posted speed
+        limits. This feature is crucial for deterring speeding and preventing
+        potential accidents.
+      </p>
+      <p>
+        <span className="font-bold">Parking Violation Detection:</span> This
+        component monitors areas where parking is restricted, such as no-parking
+        zones, bus stops, and fire hydrants. It detects illegally parked
+        vehicles and logs violations to ensure that parking rules are followed.
+      </p>
+      <p>
+        <span className="font-bold">Traffic Signal Violation Detection:</span>
+        The system captures and analyzes real-time video footage at
+        intersections to detect vehicles running red lights. This helps in
+        minimizing the risks associated with signal violations, which are a
+        major cause of urban traffic accidents.
+      </p>
+      <p>
+        <span className="font-bold">Helmet Violation Detection:</span> Focused
+        on the safety of two-wheeler riders, this module detects whether the
+        rider and pillion are wearing helmets as mandated by traffic
+        regulations. This feature promotes helmet usage, which significantly
+        reduces the severity of injuries in accidents involving motorcycles.
+        changes.
+      </p>
+      <p>
+        The Traffic Rule Violation System is a versatile and scalable solution
+        that can be deployed in various environments, from city intersections to
+        highways and urban streets. By automating the detection of traffic
+        violations, it aids in enforcing traffic laws more effectively, enhances
+        public safety, and reduces the need for manual monitoring, making it an
+        invaluable tool for modern traffic management systems.
       </p>
     </div>
   );

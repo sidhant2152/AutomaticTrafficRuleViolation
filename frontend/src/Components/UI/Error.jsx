@@ -1,4 +1,5 @@
 const Error = ({ data }) => {
+  console.log(data);
   return (
     <div role="alert" className="alert alert-error">
       <svg

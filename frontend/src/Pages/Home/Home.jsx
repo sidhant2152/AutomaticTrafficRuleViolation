@@ -4,7 +4,7 @@ import InfoCard from "../../Components/Home/InfoCard";
 import AboutMentor from "../../Components/Home/AboutMentor";
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 py-8">
       <h1 className="text-5xl font-semibold my-4 text-center">
         Automatic Traffic Offence Detection
       </h1>

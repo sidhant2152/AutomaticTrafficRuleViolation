@@ -1,14 +1,16 @@
-const TextInput = () => {
+const TextInput = ({ vehicleNo, handleChange }) => {
   return (
-    <label className="form-control w-full max-w-xs">
+    <label className="form-control w-full ">
       <div className="label">
         <span className="label-text">Vehicle Number</span>
         {/* <span className="label-text-alt">Top Right label</span> */}
       </div>
       <input
         type="text"
+        value={vehicleNo}
         placeholder="Vehicle Number"
-        className="input input-bordered w-full max-w-xs"
+        onChange={handleChange}
+        className="input input-bordered w-full "
       />
       {/* <div className="label">
         <span className="label-text-alt">Bottom Left label</span>

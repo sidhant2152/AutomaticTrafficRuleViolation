@@ -37,7 +37,7 @@ exports.handleUpload = async (req, res) => {
 exports.getChallanByVehicleNumber = async (req, res) => {
   try {
     const { vehicleNo } = req.params;
-    const challan = await Challan.find({ vehicleNo });
+    const challan = await Challan.findOne({ vehicleNo });
     if (!challan) {
       return res
         .status(404)

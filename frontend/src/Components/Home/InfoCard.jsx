@@ -1,21 +1,66 @@
 const InfoCard = () => {
   return (
     <div className="flex flex-col gap-3">
-      <h2 className="text-3xl mb-2">A brief Intro about our Project</h2>
+      <h2 className="text-3xl mb-2">Introduction:</h2>
       <p className="">
-        The Traffic Rule Violation System is an advanced computer vision-based
-        solution designed to enhance road safety by automatically detecting and
-        reporting various types of traffic violations. This comprehensive system
-        integrates multiple modules, each focused on a specific type of
-        violation, including lane line violations, speed violations, parking
-        violations, traffic signal violations, and helmet violations. By
-        leveraging state-of-the-art deep learning and image processing
-        techniques, the system aims to promote safer driving behaviors and
-        assist law enforcement in maintaining traffic order effectively.
+        In today’s rapidly urbanizing world, ensuring road safety has become
+        more critical than ever. Our cutting-edge platform integrates advanced
+        AI models to monitor traffic in real time, detect violations, and
+        seamlessly issue e-challans to offenders. This system revolutionizes
+        traffic management by reducing human intervention, enhancing accuracy,
+        and promoting a safer driving environment for everyone. Our system isn’t
+        just about enforcement—it’s about education, deterrence, and creating a
+        culture of responsibility on the roads. By automating the detection and
+        penalization process, we aim to support law enforcement agencies, reduce
+        road accidents, and ultimately save lives. With a focus on innovation,
+        our platform harnesses the power of AI to make roads safer and drivers
+        more accountable. Whether you a city official, a law enforcement agency,
+        or a concerned citizen, our platform offers a robust solution for modern
+        traffic management. Explore our website to learn more about each of the
+        AI models we deploy and how they work together to create a safer world.
       </p>
-      <h3 className="text-2xl">
-        Features of the Traffic Rule Violation System
-      </h3>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="text-2xl mt-4 mb-2">Features:</h3>
+          <p>
+            <ul>
+              <li>• Advanced AI models for real-time violation detection.</li>
+              <li>
+                • E-challan system for digital issuance and payment of fines.
+              </li>
+              <li>
+                • Automatic Number Plate Recognition (ANPR) for vehicle
+                identification
+              </li>
+              <li>
+                • Web-based platform for convenient access and transparency
+              </li>
+              <li>
+                • Comprehensive reporting and analytics for traffic authorities
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <h3 className="text-2xl mt-4 mb-2">Benefits:</h3>
+          <p>
+            <ul>
+              <li>• Reduced human error and bias in enforcement</li>
+              <li>
+                • Increased efficiency in violation detection and fine
+                processing
+              </li>
+              <li>
+                • Enhanced transparency and accountability in traffic regulation
+              </li>
+              <li>
+                • Deterrence against traffic offenses, leading to safer roads
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <h3 className="text-2xl my-4">Models</h3>
       <p>
         <span className="font-bold">Lane Line Violation Detection:</span> This
         module identifies vehicles that stray out of their designated lanes
@@ -50,14 +95,6 @@ const InfoCard = () => {
         regulations. This feature promotes helmet usage, which significantly
         reduces the severity of injuries in accidents involving motorcycles.
         changes.
-      </p>
-      <p>
-        The Traffic Rule Violation System is a versatile and scalable solution
-        that can be deployed in various environments, from city intersections to
-        highways and urban streets. By automating the detection of traffic
-        violations, it aids in enforcing traffic laws more effectively, enhances
-        public safety, and reduces the need for manual monitoring, making it an
-        invaluable tool for modern traffic management systems.
       </p>
     </div>
   );

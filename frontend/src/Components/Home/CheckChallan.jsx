@@ -10,8 +10,15 @@ const CheckChallan = () => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">Check Challan</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
+        <p>
+          This feature allows users to quickly verify if their vehicle has any
+          pending challans by entering their vehicle number. The system will
+          display details such as the presence of a challan, the amount to be
+          paid, and the specific traffic rule that was violated. This feature
+          ensures users are well-informed about their traffic violations and
+          fines.
+        </p>
+        <div className="card-actions justify-center mt-4">
           {/* <button className="btn btn-primary">Check Now</button> */}
           <Link to="/challan" className="btn btn-primary">
             Check Challan

@@ -2,15 +2,16 @@ const ModelsCarousel = () => {
   return (
     <>
       <div className="carousel rounded-box">
-        <div className="carousel-item">
+        <div className="carousel-item w-96 h-96">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+            className=""
+            src="https://www.navhindtimes.in/wp-content/uploads/2022/04/Traffic.jpg"
             alt="Burger"
           />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item w-96 h-96">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+            src="https://cdn.dnaindia.com/sites/default/files/2021/01/19/951066-traffic-violation.jpg?im=FitAndFill=(1200,900)"
             alt="Burger"
           />
         </div>

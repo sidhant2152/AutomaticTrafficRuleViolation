@@ -15,7 +15,9 @@ const Navbar = () => {
               <summary>Models</summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 <li>
-                  <Link to="/model1">Model 1</Link>
+                  <Link className="text-nowrap" to="/model1">
+                    Speed Violation
+                  </Link>
                 </li>
                 <li>
                   <Link to="/model2">Model 2</Link>

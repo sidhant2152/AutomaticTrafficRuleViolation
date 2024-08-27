@@ -6,8 +6,11 @@ const HomePage = () => {
   return (
     <div className="flex flex-col gap-8 py-8">
       <h1 className="text-5xl font-semibold my-4 text-center">
-        Automatic Traffic Offence Detection
+        Smart Traffic Enforcement System (STES)
       </h1>
+      <h2 className="text-xl text-center">
+        Revolutionizing Traffic Regulation with AI-Powered Violation Detection
+      </h2>
       <ModelsCarousel />
       <InfoCard />
       <Functions />

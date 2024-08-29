@@ -1,4 +1,5 @@
 const ChallanTable = ({ data }) => {
+  const date = new Date();
   return (
     <div className="overflow-x-auto">
       <table className="table">
@@ -17,7 +18,7 @@ const ChallanTable = ({ data }) => {
         <tbody>
           {data.map((challan) => (
             <tr className="hover" key={challan._id}>
-              <td>{challan.date.toLocaleString()}</td>
+              <td>{date.toUTCString()}</td>
               <td>{challan.vehicleNo}</td>
               <td>{challan.challanCategory}</td>
               <td>{challan.vehicleCategory}</td>

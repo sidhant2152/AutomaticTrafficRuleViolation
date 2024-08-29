@@ -62,9 +62,9 @@ const CheckChallan = () => {
   return (
     <div className="flex flex-col gap-8 py-8">
       <div className="card max-w-2xl self-center lg:card-side bg-base-100 shadow-xl">
-        <figure>
+        <figure className="w-3/5">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+            src="https://www.carinfo.app/_next/static/media/rchero.b955c702.svg"
             alt="Album"
           />
         </figure>
@@ -74,8 +74,7 @@ const CheckChallan = () => {
             <>
               <h2 className="card-title justify-center">Challan Details</h2>
               <p className="justify-center">
-                After getting challan details you can further go for online
-                payment
+                Check your vehicle challan online in one click to stay updated
               </p>
               <div className="justify-center w-full">
                 <TextInput
@@ -86,7 +85,8 @@ const CheckChallan = () => {
               <div className="card-actions justify-center">
                 <button
                   onClick={handleFetchChallanByVehicleNumber}
-                  className="btn mt-4 btn-primary">
+                  className="btn mt-4 btn-primary"
+                >
                   Get Detail
                 </button>
               </div>
@@ -120,7 +120,8 @@ const CheckChallan = () => {
                   onClick={() => {
                     setData(null);
                   }}
-                  className="btn mt-4 btn-primary">
+                  className="btn mt-4 btn-primary"
+                >
                   Reset
                 </button>
               </div>

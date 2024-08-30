@@ -26,7 +26,7 @@ const ModelList = () => {
       <div className="collapse bg-base-200">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-xl font-medium text-center">
-          <h2>Illegal Parking Detection Model</h2>
+          <h2>Unauthorized Parking Detection Model</h2>
         </div>
         <div className="collapse-content">
           <p className="mb-4">
@@ -48,7 +48,6 @@ const ModelList = () => {
 
         <div className="collapse-title text-xl font-medium text-center">
           <h2>Traffic Signal Violation Detection Model</h2>
-
         </div>
         <div className="collapse-content">
           <p className="mb-4">
@@ -70,7 +69,6 @@ const ModelList = () => {
 
         <div className="collapse-title text-xl font-medium text-center">
           <h2>Helmet Compliance Detection Model</h2>
-
         </div>
         <div className="collapse-content">
           <p className="mb-4">
@@ -95,7 +93,6 @@ const ModelList = () => {
 
         <div className="collapse-title text-xl font-medium text-center">
           <h2>Lane Discipline Violation Detection Model</h2>
-
         </div>
         <div className="collapse-content">
           <p className="mb-4">

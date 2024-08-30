@@ -1,7 +1,7 @@
 const InfoCard = () => {
   return (
     <div className="flex flex-col gap-3">
-      <h2 className="text-3xl mb-2">Introduction:</h2>
+      <h2 className="text-3xl mb-2 font-semibold">Introduction</h2>
       <p className="">
         In today’s rapidly urbanizing world, ensuring road safety has become
         more critical than ever. Our cutting-edge platform integrates advanced
@@ -19,9 +19,11 @@ const InfoCard = () => {
         traffic management. Explore our website to learn more about each of the
         AI models we deploy and how they work together to create a safer world.
       </p>
-      <div className="flex gap-4">
+      <div className="flex gap-4 ">
         <div>
-          <h3 className="text-2xl mt-4 mb-2">Features:</h3>
+          <h3 className="text-2xl mt-4 mb-2 font-semibold text-center">
+            Features
+          </h3>
           <p>
             <ul>
               <li>• Advanced AI models for real-time violation detection.</li>
@@ -42,7 +44,9 @@ const InfoCard = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-2xl mt-4 mb-2">Benefits:</h3>
+          <h3 className="text-2xl mt-4 mb-2 font-semibold text-center">
+            Benefits
+          </h3>
           <p>
             <ul>
               <li>• Reduced human error and bias in enforcement</li>
@@ -60,7 +64,7 @@ const InfoCard = () => {
           </p>
         </div>
       </div>
-      <h3 className="text-2xl my-4">Models</h3>
+      <h3 className="text-2xl my-4 font-semibold">Models</h3>
       <p>
         <span className="font-bold">Lane Line Violation Detection:</span> This
         module identifies vehicles that stray out of their designated lanes

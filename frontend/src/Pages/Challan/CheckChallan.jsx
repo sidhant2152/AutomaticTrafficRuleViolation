@@ -4,6 +4,7 @@ import ChallanTable from "./ChallanTable";
 import axios from "axios";
 import Error from "../../Components/UI/Error";
 import { challanData } from "./constants";
+import challanLOGO from "../../assets/img/CheckChallanLOGO.svg";
 // TODO: Integrate getChallanByVehicleId API
 
 const CheckChallan = () => {
@@ -62,11 +63,8 @@ const CheckChallan = () => {
   return (
     <div className="flex flex-col gap-8 py-8">
       <div className="card max-w-2xl self-center lg:card-side bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album"
-          />
+        <figure className="w-3/5">
+          <img src={challanLOGO} alt="Album" />
         </figure>
         <div className="card-body">
           {/* Get challan */}
@@ -74,8 +72,7 @@ const CheckChallan = () => {
             <>
               <h2 className="card-title justify-center">Challan Details</h2>
               <p className="justify-center">
-                After getting challan details you can further go for online
-                payment
+                Check your vehicle challan online in one click to stay updated
               </p>
               <div className="justify-center w-full">
                 <TextInput
@@ -86,7 +83,8 @@ const CheckChallan = () => {
               <div className="card-actions justify-center">
                 <button
                   onClick={handleFetchChallanByVehicleNumber}
-                  className="btn mt-4 btn-primary">
+                  className="btn mt-4 btn-primary"
+                >
                   Get Detail
                 </button>
               </div>
@@ -104,6 +102,15 @@ const CheckChallan = () => {
                   <table className="table">
                     <tbody>
                       {Object.keys(challanData).map((key, index) => {
+                        if (challanData === "Date" || index === 0) {
+                          const date = new Date();
+                          return (
+                            <tr key={index}>
+                              <td>{key}</td>
+                              <td>{date.toUTCString()}</td>
+                            </tr>
+                          );
+                        }
                         return (
                           <tr key={index}>
                             <td>{key}</td>
@@ -120,7 +127,8 @@ const CheckChallan = () => {
                   onClick={() => {
                     setData(null);
                   }}
-                  className="btn mt-4 btn-primary">
+                  className="btn mt-4 btn-primary"
+                >
                   Reset
                 </button>
               </div>

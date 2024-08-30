@@ -11,8 +11,8 @@ const ChallanTable = ({ data }) => {
             <th>Challan Category</th>
             <th>Vehicle Category</th>
             <th>Amount</th>
-            <th>Location</th>
-            <th>Time</th>
+            {/* <th>Location</th>
+            <th>Time</th> */}
           </tr>
         </thead>
         <tbody>
@@ -23,8 +23,8 @@ const ChallanTable = ({ data }) => {
               <td>{challan.challanCategory}</td>
               <td>{challan.vehicleCategory}</td>
               <td>{challan.amount}</td>
-              <td>{challan.location}</td>
-              <td>{challan.time}</td>
+              {/* <td>{challan.location}</td>
+              <td>{challan.time}</td> */}
             </tr>
           ))}
         </tbody>

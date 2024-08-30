@@ -4,6 +4,7 @@ import ChallanTable from "./ChallanTable";
 import axios from "axios";
 import Error from "../../Components/UI/Error";
 import { challanData } from "./constants";
+import challanLOGO from "../../assets/img/CheckChallanLOGO.svg";
 // TODO: Integrate getChallanByVehicleId API
 
 const CheckChallan = () => {
@@ -63,10 +64,7 @@ const CheckChallan = () => {
     <div className="flex flex-col gap-8 py-8">
       <div className="card max-w-2xl self-center lg:card-side bg-base-100 shadow-xl">
         <figure className="w-3/5">
-          <img
-            src="https://www.carinfo.app/_next/static/media/rchero.b955c702.svg"
-            alt="Album"
-          />
+          <img src={challanLOGO} alt="Album" />
         </figure>
         <div className="card-body">
           {/* Get challan */}
@@ -104,6 +102,15 @@ const CheckChallan = () => {
                   <table className="table">
                     <tbody>
                       {Object.keys(challanData).map((key, index) => {
+                        if (challanData === "Date" || index === 0) {
+                          const date = new Date();
+                          return (
+                            <tr key={index}>
+                              <td>{key}</td>
+                              <td>{date.toUTCString()}</td>
+                            </tr>
+                          );
+                        }
                         return (
                           <tr key={index}>
                             <td>{key}</td>

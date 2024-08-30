@@ -4,6 +4,6 @@ export const challanData = {
   "Challan Category": "challanCategory",
   "Vehicle Category": "vehicleCategory",
   Amount: "amount",
-  Location: "location",
-  Time: "time",
+  // Location: "location",
+  // Time: "time",
 };

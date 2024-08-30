@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import ChallanTable from "../Challan/ChallanTable";
 import axios from "axios";
 
-const randomWait = () => {
+const randomWait = (time) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    }, Math.random() * 1000 + 1000);
+    }, time);
   });
 };
 
@@ -55,7 +55,7 @@ const Model1 = () => {
   const handleModelRun = async () => {
     setLoading(true);
     setShow(false);
-    await randomWait();
+    await randomWait(data[model].delay);
     await handleFetchChallans();
     setLoading(false);
     setShow(true);
@@ -63,28 +63,34 @@ const Model1 = () => {
 
   return (
     <div>
+      {/* Model Name */}
       <h1 className="text-5xl font-semibold my-8">{data[model].title}</h1>
-      <button onClick={handleModelRun} className="btn btn-neutral">
-        {loading ? "Processing..." : "Run Model"}
-      </button>
 
       <div className="py-8">
-        <h2 className="text-xl font-semibold mb-6">
+        {/* Sample Video Text */}
+        <h2 className="text-xl font-semibold mb-6 ">
           {data[model].videoHeading}
         </h2>
-        <div className="w-full ">
+        {/* Raw Video */}
+        <div className="w-2/4 mb-8 ">
           <video src={data[model].sampleVideo} controls></video>
         </div>
-      </div>
 
+        {/* Run Model Button */}
+        <div className="flex justify-center items-start">
+          <button onClick={handleModelRun} className="btn btn-neutral mb-8">
+            {loading ? "Processing..." : "Run Model"}
+          </button>
+        </div>
+      </div>
       {show && (
         <div className="flex py-8 flex-col gap-4">
-          {/* Video */}
+          {/* Processed Video */}
           <div>
             <h2 className="text-xl font-semibold mb-6">
               {data[model].processedVideoHeading}
             </h2>
-            <div>
+            <div className="w-1/2">
               <video src={data[model].processedVideo} controls></video>
             </div>
           </div>

@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="navbar bg-base-300 shadow-xl">
       <div className="flex-1">
         <Link to="/" className="btn btn-ghost text-xl">
-          STES
+          ATES
         </Link>
       </div>
       <div className="flex-none relative">
